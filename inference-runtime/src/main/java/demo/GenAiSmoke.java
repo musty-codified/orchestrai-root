@@ -1,4 +1,4 @@
-package main.java.demo;
+package demo;
 
 import ffi.genai.ort_genai_c_h;
 
@@ -13,6 +13,7 @@ import java.util.function.Consumer;
 import java.lang.foreign.ValueLayout;
 
 import static ffi.genai.ort_genai_c_h.*;
+
 import static java.lang.foreign.ValueLayout.JAVA_INT;
 
 public class GenAiSmoke implements AutoCloseable {

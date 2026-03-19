@@ -22,7 +22,7 @@ ORT_HDR="$ORT/include/onnxruntime_c_api.h"
 [ -f "$ORT_HDR" ] || { echo "ORT header missing"; exit 1; }
 
 GENAI_HDR="$GENAI/include/ort_genai_c.h"
-[ -f "$GENAI_HDR" ] || { echo "Missing GenAI headers"; exit 1; }
+[ -f "$GENAI_HDR" ] || { echo "GenAI headers missing "; exit 1; }
 
 echo "Using ORT header   : $ORT_HDR"
 echo "Using GenAI shim   : $SHIM_DIR/ort_genai_c.h"
@@ -35,7 +35,7 @@ echo "Using GenAI shim   : $SHIM_DIR/ort_genai_c.h"
   --output "$OUT/ort" \
   "$ORT_HDR"
 
-# GenAI C API (use the discovered header!)
+# ONNX GenAI C API
 "$JX" \
   -I "$SHIM_DIR" -I "$GENAI/include" -I "$ORT/include" \
   -l onnxruntime-genai -l onnxruntime \
