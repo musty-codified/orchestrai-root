@@ -120,11 +120,11 @@ orchestrai-root
 
 Instead of:
 
-**Java -> HTTP -> Model Server -> Response**
+Java -> HTTP -> Model Server -> Response
 
 We use:
 
-**Java -> Panama -> NativeONNX Runtime**
+Java -> Panama -> NativeONNX Runtime
 
 ---
 
@@ -187,6 +187,7 @@ Example:
 LLM Output → restart service
 
 ↓
+
 LangChain4j → Java Method Call
 
 ↓
@@ -211,18 +212,23 @@ restartDomain("domain1");
 via structured extraction → POJOs.
 
 Operational Signals (logs, metrics, endpoints)
+
 ↓
 
 LLM Reasoning (ONNX Runtime)
+
 ↓
 
 Structured Action Proposal
+
 ↓
 
 Policy Validation
+
 ↓
 
 Tool Execution
+
 ↓
 
 Verification
