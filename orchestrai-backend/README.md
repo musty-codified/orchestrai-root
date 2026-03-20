@@ -78,7 +78,9 @@ Instead of hardcoded rules:
 # Architecture Overview
 ## Maven Multi-module Design
 orchestrai-root
+
 ├── inference-runtime/ # pure inference (Panama + ONNX)
+
 └── orchestrai-backend/ # agent reasoning + orchestration
 
 ### Key Principle
