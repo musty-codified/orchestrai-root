@@ -120,10 +120,11 @@ orchestrai-root
 
 Instead of:
 
-- **Java -> HTTP -> Model Server -> Response**
+**Java -> HTTP -> Model Server -> Response**
+
 We use:
 
-- **Java -> Panama -> NativeONNX Runtime**
+**Java -> Panama -> NativeONNX Runtime**
 
 ---
 
@@ -228,30 +229,30 @@ Verification
 
 
 ## Developer Notes (Ongoing Learnings)
-- **LLM output must always be treated as untrusted input**
-- **Native memory ≠ JVM memory (must manage explicitly)**
-- **Streaming tokens ≠ safe execution signals**
-- **Policy layer is more important than model intelligence**
+- LLM output must always be treated as untrusted input
+- Native memory ≠ JVM memory (must manage explicitly)
+- Streaming tokens ≠ safe execution signals
+- Policy layer is more important than model intelligence
 
 
 ## Current Focus
-- **Building inference runtime abstraction**
-- **Implementing agent reasoning loop**
-- **Designing policy validation layer**
-- **Integrating tool execution safely**
+- Building inference runtime abstraction
+- Implementing agent reasoning loop
+- Designing policy validation layer
+- Integrating tool execution safely
 
 ### End Goal
 
 A system that demonstrates:
-- **Native systems integration (Panama + ONNX)**
-- **Local LLM serving infrastructure**
-- **Agent-based orchestration**
-- **Safe AI-driven remediation**
-- **Enterprise-grade design thinking**
+- Native systems integration (Panama + ONNX)
+- Local LLM serving infrastructure
+- Agent-based orchestration
+- Safe AI-driven remediation
+- Enterprise-grade design thinking
 
 ### Next Steps
-- **Implement agent loop (Observe → Reason → Act)** 
-- **Add structured action parsing**
-- **Integrate policy engine**
-- **Build tool execution layer**
-- **Add verification pipeline**
+- Implement agent loop (Observe → Reason → Act)
+- Add structured action parsing
+- Integrate policy engine
+- Build tool execution layer
+- Add verification pipeline
